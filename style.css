@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    min-height: 100vh;      
+    background-color: #369e1c; 
+    background-image: url("https://cdn.ome.lt/cM8Uhm4gB48e9ocJGsmNwjZan00=/987x0/smart/filters:format(webp)/uploads/conteudo/fotos/The_Legend_of_Zelda_40th_Anniversary_Direct_9.8.2026_-_0-35-53.jpeg");
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input {
+    border: 0px;
+    border-bottom: solid 1px #ffffff; 
+    padding: 8px;                  
+    font-size: 16px;              
+}
+
+input:hover { 
+    border: solid 1px rgb(255, 0, 0);
+}
+
+input:focus { 
+    border: solid 1px limegreen;
+    outline: none;
+}
+
+button {
+    grid-column: 1 / 3;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#mensagem {
+    display: none;
+}

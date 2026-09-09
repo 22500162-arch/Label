@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form onsubmit="enviar_formulario(event)">
+
+        <label>Nome:</label>
+        <input type="text" oninput="mascara_nome(this)" required>
+
+        <label>Endereço:</label>
+        <input type="text" required>
+
+        <label>CEP:</label>
+        <input type="text" oninput="mascara_cep(this)" placeholder="00.000-000" maxlength="10" required>
+
+        <label>CPF:</label>
+        <input type="text" oninput="mascara_cpf(this)" placeholder="000.000.000-00" maxlength="14" required>
+
+        <label>Telefone:</label>
+        <input type="text" oninput="mascara_telefone(this)" placeholder="+55 (00) 0 0000-0000" maxlength="19" required>
+
+        <label>CNPJ:</label>
+        <input type="text" oninput="mascara_cnpj(this)" placeholder="00.000.000/0000-00" maxlength="18" required>
+
+        <button type="submit">Enviar</button>
+
+        <div id="mensagem">
+            Formulário enviado com sucesso!
+        </div>
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
